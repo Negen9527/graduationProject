@@ -8,7 +8,7 @@ def index(request):
     content = ''
     project = Project.objects.get(pk=1)
     content = project.pinfo
-    return render(request, 'graduationApp/index.html', {"content":content})
+    return render(request, 'graduationApp/index.bak.html', {"content":content})
 
 
 def detail(request):
