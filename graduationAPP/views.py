@@ -15,10 +15,10 @@ def detail(request):
     title = ''
     pinfo = ''
     project = Project.objects.get(pk=1)
-    ptitle = project.ptitle
-    pinfo = project.pinfo
+    ptitle = project.p_title
+    pcontent = project.p_content
     ret_data = {
         'title': ptitle,
-        'content': pinfo
+        'content': pcontent
     }
     return render(request, 'graduationApp/detail.html', ret_data)
