@@ -2,7 +2,7 @@
 <html>
 <head>
     {% load staticfiles %}
-  <title>Bootstrap 实例</title>
+  <title>Graduation Peoject Share</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/static/css/bootstrap.min.css">
@@ -34,14 +34,14 @@
         <!-- Links -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Link 1</a>
+            <a class="nav-link" href="../index">首页</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link 2</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link 3</a>
-          </li>
+{#          <li class="nav-item">#}
+{#            <a class="nav-link" href="#">Link 3</a>#}
+{#          </li>#}
         </ul>
       </nav>
 
@@ -50,7 +50,13 @@
   </div>
 
   <br>
-  <h1>{{ title }}</h1>
+    <div class="col-sm-6 offset-sm-3 text-center">
+        <h1>{{ title }}</h1>
+        <div class="col-sm-2 offset-sm-10 text-dark">浏览量：{{ read_count }}</div>
+
+    </div>
+
+    <div class="col-sm-6 offset-sm-3" style="border-top: none;border-left: none;border-right: none;border-bottom: 1px solid #aaaaaa; "></div>
   <br>
 
 
@@ -63,21 +69,17 @@
     <div class="col-sm-3">
 
       <div class="card" style="text-align:left;">
-        <div class="card-header bg-secondary text-white">头部</div>
+        <div class="card-header bg-secondary text-white">热门项目</div>
         <div class="card-body">
           <ul class="list-group">
             <li class="list-group-item">Disabled item</li>
             <li class="list-group-item">Second item</li>
             <li class="list-group-item">Third item</li>
           </ul>
-
         </div>
       </div>
-
-
     </div>
   </div>
-
 </div>
 
 
