@@ -60,7 +60,7 @@
   <br>
 
 
-  <div class="row">
+  <div class="row" id="">
     <div class="col-sm-3">预留位</div>
     <div class="col-sm-6 content-left-right-style" id="content">
       <!-- <iframe src="http://www.baidu.com" height= "100%" width="100%" name="leftFrame" scrolling="yes"  noresize="noresize"  id="iframe"></iframe> -->
@@ -80,8 +80,15 @@
       </div>
     </div>
   </div>
-</div>
+    <br><br><br><br>
 
+
+
+</div>
+    <div class="jumbotron text-center" id="bottom-bar" style="">
+      <p>Copyright © xxxx-xxxx Graduation Project Share 版权所有</p>
+      <p>备案号：<a>川ICP备xxxxxxxx</a></p>
+    </div>
 
 
 
@@ -92,6 +99,24 @@
 {#    iframe = document.getElementById('iframe');#}
 {#    iframe.style.width = width#}
 {#</script>#}
+<script type="text/javascript">
+    var h = document.documentElement.clientHeight || document.body.clientHeight;
+    var div = document.getElementById("content")
+    var bottombar = document.getElementById("bottom-bar")
+  // console.log(h);
+    {#div.style.height = h*0.65 + 'px'#}
+    div_h = div.offsetHeight
+    screenH = h*0.65
+    if (div_h > screenH){
+        bottombar.style.marginTop = (10) + 'px'
+    }else{
+        div.style.height = h*0.65 + 'px'
+        {#bottombar.style.top = (div_h + 20) + 'px'#}
+    }
+    console.log(div_h)
+
+
+</script>
 
 </body>
 </html>
