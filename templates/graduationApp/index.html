@@ -115,9 +115,9 @@
         <div class="card-header bg-secondary text-white">热门项目</div>
         <div class="card-body">
           <ul class="list-group">
-            <li class="list-group-item">Disabled item</li>
-            <li class="list-group-item">Second item</li>
-            <li class="list-group-item">Third item</li>
+            {% for hotproject in hotProjects %}
+                <a href="../detail?projectId={{ hotproject.pk }}&title={{ project.p_title }}"><li class="list-group-item">{{ hotproject.p_title }}</li></a>
+            {% endfor %}
           </ul>
 
         </div>

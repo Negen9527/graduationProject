@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from . models import *
 from django.core.paginator import Paginator
 # Create your views here.
-from .utils import listing
+from .utils import *
 
 
 def index(request):
@@ -16,10 +16,11 @@ def index(request):
     projects = Project.objects.all()[(currentpage-1)*rows: currentpage*rows]
     nums = range(0, 10-len(projects))
     contacts = listing(Project, 10, currentpage)
-
+    hotProjects = getHotProjects()
     result_data = {"projects": projects,
                    "nums": nums,
-                   "contacts": contacts}
+                   "contacts": contacts,
+                   "hotProjects": hotProjects}
 
     return render(request, 'graduationApp/index.html', result_data)
 
@@ -34,10 +35,12 @@ def detail(request):
     project.save()
     ptitle = project.p_title
     pcontent = project.p_content
+    hotProjects = getHotProjects()
     ret_data = {
         'title': ptitle,
         'content': pcontent,
         'read_count': project.p_read_count,
+        'hotProjects': hotProjects,
     }
     return render(request, 'graduationApp/detail.html', ret_data)
 
