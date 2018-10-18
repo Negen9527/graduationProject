@@ -13,7 +13,9 @@
   div{
     /* border: 1px solid; */
   }
-
+#totalPage a:hover{
+    background-color: #ffffff;
+}
 </style>
 </head>
 <body>
@@ -97,24 +99,29 @@
           </tbody>
       </table>
 
-    <div class="">
-      <ul class="pagination">
-          {% if contacts.has_previous %}
-              <li class="page-item"><a class="page-link" href="?page={{ contacts.previous_page_number }}">Previous</a></li>
-          {% endif %}
-          {% for pg in contacts.paginator.page_range %}
-              <li class="page-item"><a class="page-link" href="?page={{ pg }}">{{ pg }}</a></li>
-          {% endfor %}
+    <div class="row">
+        <div class="col">
+          <ul class="pagination">
+              {% if contacts.has_previous %}
+                  <li class="page-item"><a class="page-link" href="?page={{ contacts.previous_page_number }}">Previous</a></li>
+              {% endif %}
+              {% for pg in contacts.paginator.page_range %}
+                  <li class="page-item"><a class="page-link" href="?page={{ pg }}">{{ pg }}</a></li>
+              {% endfor %}
 
-          {% if contacts.has_next %}
-             <li class="page-item"><a class="page-link" href="?page={{ contacts.next_page_number }}">Next</a></li>
-          {% endif %}
-{#        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>#}
-{#        <li class="page-item"><a class="page-link" href="#">1</a></li>#}
-{#        <li class="page-item"><a class="page-link" href="#">2</a></li>#}
-{#        <li class="page-item"><a class="page-link" href="#">3</a></li>#}
-{#        <li class="page-item"><a class="page-link" href="#">Next</a></li>#}
-      </ul>
+              {% if contacts.has_next %}
+                 <li class="page-item"><a class="page-link" href="?page={{ contacts.next_page_number }}">Next</a></li>
+              {% endif %}
+    {#        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>#}
+    {#        <li class="page-item"><a class="page-link" href="#">1</a></li>#}
+    {#        <li class="page-item"><a class="page-link" href="#">2</a></li>#}
+    {#        <li class="page-item"><a class="page-link" href="#">3</a></li>#}
+    {#        <li class="page-item"><a class="page-link" href="#">Next</a></li>#}
+          </ul>
+        </div>
+        <div class="col">
+            <li class="page-item" style="list-style: none;border: none;" id="totalPage"><a class="page-link text-right" style="border: none;">Total Page：{{ contacts.paginator.num_pages }}</a></li>
+        </div>
     </div>
 
     </div>

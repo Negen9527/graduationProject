@@ -17,6 +17,7 @@ def index(request):
     nums = range(0, 10-len(projects))
     contacts = listing(Project, 10, currentpage)
     hotProjects = getHotProjects()
+
     result_data = {"projects": projects,
                    "nums": nums,
                    "contacts": contacts,
