@@ -44,3 +44,21 @@ def detail(request):
     }
     return render(request, 'graduationApp/detail.html', ret_data)
 
+
+def search(request):
+    currentpage = request.GET.get('page')
+    if currentpage is None:
+        currentpage = 1
+    else:
+        currentpage = int(currentpage)
+    keyword = request.GET.get('keyword')
+    result_projects = Project.objects.filter(p_title__contains=keyword)
+
+    nums = range(0, 10-len(result_projects))
+    contacts = listing(Project, 10, currentpage)
+    hotProjects = getHotProjects()
+    result_data = {"projects": result_projects,
+                   "nums": nums,
+                   "contacts": contacts,
+                   "hotProjects": hotProjects}
+    return render(request, 'graduationApp/searchResult.html', result_data)

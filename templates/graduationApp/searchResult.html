@@ -47,19 +47,19 @@
   <br>
   <div class="row">
     <div class="col-sm-6 offset-sm-3 text-left">
-      <h1>项目列表</h1>
-          <br>
-        <form action="../search" id="searchForm">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Search" name="keyword" id="keyword">
-                <div class="input-group-append">
-                  <button class="btn btn-primary" type="button" id="searchBtn" onclick="search_submit()">&nbsp;&nbsp;Go&nbsp;&nbsp;</button>
-                 </div>
-            </div>
-        </form>
+      <h1>查询结果</h1>
+
+{#        <form action="search">#}
+{#            <div class="input-group mb-3">#}
+{#                <input type="text" class="form-control" placeholder="Search">#}
+{#                <div class="input-group-append">#}
+{#                  <button class="btn btn-primary" type="submit">&nbsp;&nbsp;Go&nbsp;&nbsp;</button>#}
+{#                 </div>#}
+{#            </div>#}
+{#        </form>#}
     </div>
   </div>
-
+    <br>
 
 
   <div class="row">
@@ -67,6 +67,7 @@
     <div class="col-sm-6 content-left-right-style" id="content">
       <!-- <iframe src="http://www.baidu.com" height= "100%" width="100%" name="leftFrame" scrolling="yes"  noresize="noresize"  id="iframe"></iframe> -->
 
+    {% if projects %}
       <table class="table table-hover">
           <thead>
             <tr>
@@ -96,7 +97,6 @@
             {% endfor %}
           </tbody>
       </table>
-
     <div class="">
       <ul class="pagination">
           {% if contacts.has_previous %}
@@ -116,6 +116,14 @@
 {#        <li class="page-item"><a class="page-link" href="#">Next</a></li>#}
       </ul>
     </div>
+    {% else %}
+        <h5>暂未查询到相关项目</h5>
+        <a href="../index"><h6>回到首页</h6></a>
+    {% endif %}
+
+
+
+
 
     </div>
     <div class="col-sm-3">
@@ -161,15 +169,6 @@
   // console.log(h);
   // div.style.height = h*0.65 + 'px'
 
-    function search_submit() {
-        var searchbox = document.getElementById('keyword')
-        keyword = searchbox.value
-        if (''!= keyword && null != keyword){
-            document.getElementById('searchForm').submit()
-        }else{
-            alert('请输入要查询得内容')
-        }
-    }
 
 </script>
 </body>
