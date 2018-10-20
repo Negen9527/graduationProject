@@ -28,10 +28,20 @@ def listing(model_name, page_size, currentpage):
     return contacts
 
 
+#获取浏览量排名前五之内的项目
 def getHotProjects():
     projects = Project.objects.all().order_by('-p_read_count')
     if projects.__len__() > 5:
         return projects[0:5]
     else:
         return projects
+
+#获取最新的五个项目（五个以内）
+def getNewProjects():
+    projects = Project.objects.all().order_by('-p_datetime')
+    if projects.__len__() > 5:
+        return projects[0:5]
+    else:
+        return projects
+
 

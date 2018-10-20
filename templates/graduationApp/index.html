@@ -121,13 +121,21 @@
           </ul>
         </div>
         <div class="col">
-            <li class="page-item" style="list-style: none;border: none;" id="totalPage"><a class="page-link text-right" style="border: none;">Total Page：{{ contacts.paginator.num_pages }}</a></li>
+            <li class="page-item" style="list-style: none;border: none;" id="totalPage">
+                <a class="page-link text-right" style="border: none;">Total Page：
+                    {% if projects.count != 0 %}
+                        {{ contacts.paginator.num_pages }}
+                    {% else %}
+                        0
+                    {% endif %}
+
+                </a>
+            </li>
         </div>
     </div>
 
     </div>
     <div class="col-sm-3">
-
       <div class="card" style="text-align:left;">
         <div class="card-header bg-secondary text-white">热门项目</div>
         <div class="card-body">
@@ -136,11 +144,20 @@
                 <a href="../detail?projectId={{ hotproject.pk }}&title={{ project.p_title }}"><li class="list-group-item">{{ hotproject.p_title }}</li></a>
             {% endfor %}
           </ul>
-
         </div>
       </div>
 
 
+      <div class="card" style="text-align:left;">
+        <div class="card-header bg-secondary text-white">新上项目</div>
+        <div class="card-body">
+          <ul class="list-group">
+            {% for newproject in newProjects %}
+                <a href="../detail?projectId={{ newproject.pk }}&title={{ newproject.p_title }}"><li class="list-group-item">{{ newproject.p_title }}</li></a>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 

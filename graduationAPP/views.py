@@ -17,11 +17,12 @@ def index(request):
     nums = range(0, 10-len(projects))
     contacts = listing(Project, 10, currentpage)
     hotProjects = getHotProjects()
-
+    newProjects = getNewProjects()
     result_data = {"projects": projects,
                    "nums": nums,
                    "contacts": contacts,
-                   "hotProjects": hotProjects}
+                   "hotProjects": hotProjects,
+                   "newProjects": newProjects}
 
     return render(request, 'graduationApp/index.html', result_data)
 
@@ -37,11 +38,13 @@ def detail(request):
     ptitle = project.p_title
     pcontent = project.p_content
     hotProjects = getHotProjects()
+    newProjects = getNewProjects()
     ret_data = {
         'title': ptitle,
         'content': pcontent,
         'read_count': project.p_read_count,
         'hotProjects': hotProjects,
+        'newProjects': newProjects
     }
     return render(request, 'graduationApp/detail.html', ret_data)
 

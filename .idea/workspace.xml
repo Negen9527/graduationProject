@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f7b23009-794f-455c-835c-6193260071ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graduationAPP/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/graduationAPP/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graduationAPP/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/graduationAPP/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graduationAPP/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/graduationAPP/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/图片_20181008222048_486.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/图片_20181013095508_908.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/图片_20181013102621_374.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/graduationApp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graduationApp/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,7 +18,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/graduation_project$utils.coverage" NAME="utils Coverage Results" MODIFIED="1539679728071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graduationAPP" />
-    <SUITE FILE_PATH="coverage/graduation_project$manager.coverage" NAME="manager Coverage Results" MODIFIED="1539998808396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/graduation_project$manager.coverage" NAME="manager Coverage Results" MODIFIED="1539999302414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -80,35 +85,35 @@
         <counts>
           <entry key="css" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="10" />
+          <entry key="html" value="11" />
           <entry key="md" value="4" />
-          <entry key="py" value="27" />
+          <entry key="py" value="30" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="10" />
+          <entry key="HTML" value="11" />
           <entry key="Markdown" value="4" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="27" />
+          <entry key="Python" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="2040" />
+          <entry key="html" value="2110" />
           <entry key="md" value="585" />
-          <entry key="py" value="1193" />
+          <entry key="py" value="1333" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2041" />
+          <entry key="HTML" value="2111" />
           <entry key="Markdown" value="584" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="1193" />
+          <entry key="Python" value="1333" />
         </counts>
       </usages-collector>
     </session>
@@ -127,21 +132,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/graduationAPP/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="60" column="47" lean-forward="true" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
+            <state relative-caret-position="220">
+              <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1539856131753" expanded="true" signature="1499:1504" ph="..." />
+                <marker date="1539999932233" expanded="true" signature="1650:1655" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/graduationAPP/admin.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graduationAPP/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            <state relative-caret-position="157">
+              <caret line="40" column="60" lean-forward="true" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+              <folding>
+                <element signature="e#151#222#0" expanded="true" />
+                <marker date="1539999836381" expanded="true" signature="852:857" ph="..." />
+                <marker date="1539999836381" expanded="true" signature="1049:1207" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,11 +159,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/graduationAPP/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="14" />
+            <state relative-caret-position="198">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="14" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/graduationApp/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="159" column="12" selection-start-line="159" selection-start-column="12" selection-end-line="159" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -187,15 +206,15 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/graduationAPP/migrations/utils.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/graduationAPP/utils.py" />
         <option value="$PROJECT_DIR$/templates/graduationApp/detail.html" />
         <option value="$PROJECT_DIR$/templates/graduationApp/searchResult.html" />
         <option value="$PROJECT_DIR$/graduation_project/settings.py" />
-        <option value="$PROJECT_DIR$/graduationAPP/views.py" />
-        <option value="$PROJECT_DIR$/templates/graduationApp/index.html" />
         <option value="$PROJECT_DIR$/graduation_project/urls.py" />
         <option value="$PROJECT_DIR$/graduationAPP/urls.py" />
         <option value="$PROJECT_DIR$/graduationAPP/admin.py" />
+        <option value="$PROJECT_DIR$/graduationAPP/utils.py" />
+        <option value="$PROJECT_DIR$/graduationAPP/views.py" />
+        <option value="$PROJECT_DIR$/templates/graduationApp/index.html" />
       </list>
     </option>
   </component>
@@ -227,7 +246,23 @@
             <path>
               <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
               <item name="graduationAPP" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduation_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationApp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -365,13 +400,13 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21341956" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21341956" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23090586" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23090586" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3143872" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -462,35 +497,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graduationAPP/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="26" column="53" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="53" />
-          <folding>
-            <element signature="e#151#222#0" expanded="true" />
-            <marker date="1539679869568" expanded="true" signature="836:841" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/graduationAPP/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/graduationApp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="127" column="10" lean-forward="true" selection-start-line="127" selection-start-column="10" selection-end-line="127" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graduation_project/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -501,31 +511,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graduationAPP/views.py">
+    <entry file="file://$PROJECT_DIR$/graduation_project/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="60" column="47" lean-forward="true" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1539856131753" expanded="true" signature="1499:1504" ph="..." />
-          </folding>
+        <state relative-caret-position="358">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graduationAPP/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/graduationAPP/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="14" />
+        <state relative-caret-position="198">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="14" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graduationAPP/admin.py">
+    <entry file="file://$PROJECT_DIR$/graduationAPP/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        <state relative-caret-position="157">
+          <caret line="40" column="60" lean-forward="true" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+          <folding>
+            <element signature="e#151#222#0" expanded="true" />
+            <marker date="1539999836381" expanded="true" signature="852:857" ph="..." />
+            <marker date="1539999836381" expanded="true" signature="1049:1207" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graduationAPP/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1539999932233" expanded="true" signature="1650:1655" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/graduationApp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="159" column="12" selection-start-line="159" selection-start-column="12" selection-end-line="159" selection-end-column="12" />
         </state>
       </provider>
     </entry>
