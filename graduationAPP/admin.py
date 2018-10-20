@@ -2,9 +2,14 @@ from django.contrib import admin
 
 # Register your models here.
 from .models import *
-class ProjectAdmin(admin.ModelAdmin):
-    # list_display = ['id', 'pname', 'pinfo', 'pimage']
-    pass
 
-admin.site.register(Project, ProjectAdmin)
+
+@admin.register(Project)
+class ProjectAdmin(admin.ModelAdmin):
+    """
+    后台自定义显示
+    """
+    list_display = ['id', 'p_title', 'p_language', 'p_datetime']
+
+# admin.site.register(Project, ProjectAdmin)
 
