@@ -105,10 +105,11 @@
               {% if contacts.has_previous %}
                   <li class="page-item"><a class="page-link" href="?page={{ contacts.previous_page_number }}">Previous</a></li>
               {% endif %}
-              {% for pg in contacts.paginator.page_range %}
-                  <li class="page-item"><a class="page-link" href="?page={{ pg }}">{{ pg }}</a></li>
-              {% endfor %}
-
+              {% if contacts.paginator.num_pages > 1 %}
+                  {% for pg in contacts.paginator.page_range %}
+                      <li class="page-item"><a class="page-link" href="?page={{ pg }}">{{ pg }}</a></li>
+                  {% endfor %}
+              {% endif %}
               {% if contacts.has_next %}
                  <li class="page-item"><a class="page-link" href="?page={{ contacts.next_page_number }}">Next</a></li>
               {% endif %}

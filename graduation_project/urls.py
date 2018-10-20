@@ -21,6 +21,7 @@ from . import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     # re_path(r'^$', include("graduationAPP.urls")),
+    path('', include("graduationAPP.urls")),
     path('graduation/', include("graduationAPP.urls")),
     re_path(r'^ueditor/', include('DjangoUeditor.urls')),
     # re_path(r'^static/(?P<path>.*)$','django.views.static.serve',{'document_root':settings.STATIC_ROOT}),
